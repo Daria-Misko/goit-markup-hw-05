@@ -71,7 +71,7 @@
 			<section class="hero section">
 				<div class="container">
 					<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-					<button type="button" class="hero-button">
+					<button type="button" class="hero-button" data-modal-open>
 						Замовити послугу
 					</button>
 				</div>
@@ -121,9 +121,9 @@
 									src="./images/1.jpeg"
 									alt="людина пише код"
 									width="370"
-									height="294"
-								/>
-								<div class="what-we-do-about"><p>десктопні додатки</p></div>
+									height="294"/>
+								<div class="what-we-do-about"><p>десктопні додатки</p>
+							</div>
 						</li>
 						<li>
 							<div class="thumb">
@@ -131,9 +131,9 @@
 									src="./images/2.jpeg"
 									alt="людина розробляє інтерфейс"
 									width="370"
-									height="294"
-								/>
-								<div class="what-we-do-about"><p>мобільні додатки</p></div>
+									height="294"/>
+								<div class="what-we-do-about"><p>мобільні додатки</p>
+								</div>
 							</div>
 						</li>
 						<li>
@@ -142,8 +142,7 @@
 									src="./images/3.jpeg"
 									alt="людина підбирає колір"
 									width="370"
-									height="294"
-								/>
+									height="294"/>
 								<div class="what-we-do-about"><p>дизайнерські рішення</p></div>
 							</div>
 						</li>
@@ -188,8 +187,7 @@
 										><svg
 											class="svg-instagram"
 											width="20"
-											height="20"
-										>
+											height="20">
 											<use
 												href="./images/icons/symbol-defs.svg#icon-facebook"
 											></use>
@@ -201,8 +199,7 @@
 										><svg
 											class="svg-instagram"
 											width="20"
-											height="20"
-										>
+											height="20">
 											<use
 												href="./images/icons/symbol-defs.svg#icon-linkedin"
 											></use>
@@ -217,8 +214,7 @@
 								src="./images/command/2.jpeg"
 								alt="Ольга Рєпіна"
 								width="270"
-								height="260"
-							/>
+								height="260"/>
 							<h3 class="teammate-name">Ольга Рєпіна</h3>
 							<p>Frontend Developer</p>
 							<ul class="social-links">
@@ -226,8 +222,7 @@
 									<a href="#" class="social-link">
 										<svg class="svg-instagram" width="20" height="20">
 											<use
-												href="./images/icons/symbol-defs.svg#icon-instagram"
-											></use>
+												href="./images/icons/symbol-defs.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
@@ -524,5 +519,15 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="modal-button" data-modal-close>
+					<svg>
+						<use class="modal-esc-symbol" href="./images/icons/icomoon1/symbol-defs.svg#icon-cross"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
