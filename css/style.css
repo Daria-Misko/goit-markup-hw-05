@@ -95,7 +95,27 @@ header {
 	color: var(--color-blue);
 	position: relative;
 }
+.nav-link {
+	position: relative;
+}
 .nav-link-active::after {
+	content: "";
+	display: block;
+	align-items: center;
+	margin-top: 31px;
+	position: absolute;
+	top: 15px;
+	width: 100%;
+	height: 4px;
+	border: 1px solid var(--color-blue);
+	border-radius: 2px;
+	background-color: var(--color-blue);
+
+	transition-property: background-color, border;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover::after {
 	content: "";
 	display: block;
 	align-items: center;
@@ -136,6 +156,9 @@ ul {
 }
 .nav-link {
 	color: var(--main-color-title);
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -158,9 +181,16 @@ ul {
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-mail {
 	fill: currentColor;
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-mail:hover {
 	fill: currentColor;
@@ -176,6 +206,10 @@ ul {
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-phone:hover,
 .contact-phone:focus {
@@ -184,6 +218,9 @@ ul {
 
 .svg-phone {
 	fill: currentColor;
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-phone:hover {
 	fill: currentColor;
@@ -235,6 +272,10 @@ ul {
 	border-radius: 4px;
 	min-width: 216px;
 	padding: 10px 0;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -361,6 +402,10 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -368,6 +413,10 @@ ul {
 }
 .svg-instagram {
 	fill: var(--social-icon-color);
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-instagram:hover,
 .svg-instagram:focus {
@@ -398,9 +447,17 @@ ul {
 	border: 1px solid var(--social-icon-color);
 	border-radius: 4px;
 	width: calc((100%- 200px) / 6);
+
+	transition-property: border;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo {
 	fill: var(--social-icon-color);
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon:hover,
 .clients-icon:focus {
@@ -432,6 +489,10 @@ ul {
 	border: none;
 	padding: 6px 22px;
 	flex-basis: calc(100% / 5 - 32px);
+
+	transition-property: background-color, box-shadow, color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -450,6 +511,10 @@ ul {
 }
 .examples-item-link {
 	display: block;
+
+	transition-property: box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .examples-item-link:hover,
 .examples-item-link:focus {
@@ -539,6 +604,10 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
@@ -546,6 +615,10 @@ footer {
 }
 .svg-footer {
 	fill: var(--color-white);
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-footer:hover,
 .svg-footer:focus {
