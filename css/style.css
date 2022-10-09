@@ -80,7 +80,10 @@ button {
 	padding-right: 15px;
 	margin: 0 auto;
 }
-
+p {
+	margin: 0;
+	padding: 0;
+}
 /* header */
 header {
 	padding-top: 24px;
